@@ -1,3 +1,5 @@
-export default function Footer(){
-	return <h1>footer</h1>
+import FooterSocials from "./FooterSocials"
+
+export default function Footer() {
+	return <footer className="flex-row"><FooterSocials /></footer>
 }

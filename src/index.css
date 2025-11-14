@@ -1,7 +1,16 @@
 :root {
 	--light-black: #23252C;
+	--medium-black: #1A1B21;
+	--dark-black: #161619;
+	--dark-grey: #374151;
+	--dark-white: #DCDCDC;
+	--white: #F5F5F5;
+	--orange: #F3BF99;
+	--blue: #5093E2;
+	--light-grey: #918E9B;
 
 	font-family: Inter, Arial, Verdana, Geneva, sans-serif;
+	color: var(--white);
 }
 
 * {
@@ -21,6 +30,30 @@
 	flex-direction: column;
 }
 
+.btn {
+	padding: 0.45rem 1.125rem;
+
+	border-radius: 6px;
+
+	font-size: 0.875rem;
+	font-weight: 500;
+
+	flex: 1;
+}
+
+h1 {
+	font-size: 1.625rem;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+p {
+	font-size: 0.635rem;
+	color: var(--dark-white);
+}
+
 body {
 	height: 100vh;
 
@@ -38,7 +71,7 @@ body {
 }
 
 header {
-	width: 20rem;
+	width: 100%;
 	height: 20rem;
 }
 
@@ -51,4 +84,88 @@ header {
 
 	object-fit: none;
 	object-position: 60% 20%;
+}
+
+main {
+	padding: 1.375rem 2.25rem;
+
+	background-color: var(--medium-black);
+}
+
+.profile-details {
+
+	align-items: center;
+
+	gap: 0.375rem;
+}
+
+.profession {
+	margin-bottom: 0.1rem;
+
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: var(--orange);
+}
+
+.personal-website {
+	text-decoration: none;
+	font-size: 0.635rem;
+}
+
+.personal-website:hover {
+	cursor: pointer;
+}
+
+.contact-buttons {
+	width: 100%;
+
+	margin: 1rem auto 2rem;
+
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 1rem;
+}
+
+.email-btn {
+	color: var(--dark-grey);
+}
+
+.linkedin-btn {
+	background-color: var(--blue);
+
+	color: var(--white);
+}
+
+.profile-text-container {
+	margin: 1rem 0;
+}
+
+.profile-text-title {
+	margin-bottom: 0.30rem;
+}
+
+.profile-text-text {
+	line-height: 1.5;
+}
+
+footer {
+	padding: 1.25rem 0;
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: 1.5rem;
+
+	background-color: var(--dark-black);
+}
+
+.social-icon {
+	width: 1.625rem;
+	height: 1.625rem;
+	font-size: 1.625rem;
+	color: var(--light-grey);
 }
